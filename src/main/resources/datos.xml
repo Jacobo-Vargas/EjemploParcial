@@ -11,19 +11,19 @@
       <string>1</string>
      </void>
      <void property="departamento">
-      <string>nada</string>
+      <string>q</string>
      </void>
      <void property="horaFinal">
-      <string>0</string>
+      <string>10:02</string>
      </void>
      <void property="horaInicio">
-      <string>0</string>
+      <string>10:00</string>
      </void>
      <void property="magnitud">
-      <float>0.0</float>
+      <float>2.5</float>
      </void>
      <void property="profundidad">
-      <float>0.0</float>
+      <float>5.0</float>
      </void>
     </object>
    </void>
@@ -36,44 +36,44 @@
       <string>2</string>
      </void>
      <void property="departamento">
-      <string>nada</string>
+      <string>q</string>
      </void>
      <void property="horaFinal">
-      <string>0</string>
+      <string>10:02</string>
      </void>
      <void property="horaInicio">
-      <string>0</string>
+      <string>10:00</string>
      </void>
      <void property="magnitud">
-      <float>0.0</float>
+      <float>2.5</float>
      </void>
      <void property="profundidad">
-      <float>0.0</float>
+      <float>5.0</float>
      </void>
     </object>
    </void>
    <void method="add">
     <object class="com.example.programacion3_parcial2.ejercicio1.model.Sismo">
      <void property="ciudad">
-      <string>Armenia</string>
+      <string>Tebaida</string>
      </void>
      <void property="codigo">
       <string>3</string>
      </void>
      <void property="departamento">
-      <string>nada</string>
+      <string>q</string>
      </void>
      <void property="horaFinal">
-      <string>0</string>
+      <string>10:02</string>
      </void>
      <void property="horaInicio">
-      <string>0</string>
+      <string>10:00</string>
      </void>
      <void property="magnitud">
-      <float>0.0</float>
+      <float>2.5</float>
      </void>
      <void property="profundidad">
-      <float>0.0</float>
+      <float>5.0</float>
      </void>
     </object>
    </void>
@@ -86,19 +86,94 @@
       <string>4</string>
      </void>
      <void property="departamento">
-      <string>nada</string>
+      <string>q</string>
      </void>
      <void property="horaFinal">
-      <string>0</string>
+      <string>10:02</string>
      </void>
      <void property="horaInicio">
-      <string>0</string>
+      <string>10:00</string>
      </void>
      <void property="magnitud">
-      <float>0.0</float>
+      <float>2.5</float>
      </void>
      <void property="profundidad">
-      <float>0.0</float>
+      <float>5.0</float>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.example.programacion3_parcial2.ejercicio1.model.Sismo">
+     <void property="ciudad">
+      <string>Tebaida</string>
+     </void>
+     <void property="codigo">
+      <string>5</string>
+     </void>
+     <void property="departamento">
+      <string>q</string>
+     </void>
+     <void property="horaFinal">
+      <string>10:02</string>
+     </void>
+     <void property="horaInicio">
+      <string>10:00</string>
+     </void>
+     <void property="magnitud">
+      <float>2.5</float>
+     </void>
+     <void property="profundidad">
+      <float>5.0</float>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.example.programacion3_parcial2.ejercicio1.model.Sismo">
+     <void property="ciudad">
+      <string>25</string>
+     </void>
+     <void property="codigo">
+      <string>52</string>
+     </void>
+     <void property="departamento">
+      <string>25</string>
+     </void>
+     <void property="horaFinal">
+      <string>25</string>
+     </void>
+     <void property="horaInicio">
+      <string>25</string>
+     </void>
+     <void property="magnitud">
+      <float>25.0</float>
+     </void>
+     <void property="profundidad">
+      <float>25.0</float>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.example.programacion3_parcial2.ejercicio1.model.Sismo">
+     <void property="ciudad">
+      <string>25</string>
+     </void>
+     <void property="codigo">
+      <string>53</string>
+     </void>
+     <void property="departamento">
+      <string>25</string>
+     </void>
+     <void property="horaFinal">
+      <string>25</string>
+     </void>
+     <void property="horaInicio">
+      <string>25</string>
+     </void>
+     <void property="magnitud">
+      <float>25.0</float>
+     </void>
+     <void property="profundidad">
+      <float>25.0</float>
      </void>
     </object>
    </void>

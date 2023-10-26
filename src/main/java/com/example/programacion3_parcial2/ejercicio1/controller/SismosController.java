@@ -2,7 +2,6 @@ package com.example.programacion3_parcial2.ejercicio1.controller;
 
 import com.example.programacion3_parcial2.ejercicio1.model.Observatorio;
 import com.example.programacion3_parcial2.ejercicio1.model.Sismo;
-import com.example.programacion3_parcial2.ejercicio1.utils.ObservatorioUtil;
 import com.example.programacion3_parcial2.ejercicio1.utils.Persistencia;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
@@ -17,9 +16,13 @@ import java.util.ArrayList;
 
 
 public class SismosController {
+    Observatorio  observatorio = new Observatorio();
 
     @FXML
     private TableColumn<Sismo, String> tcCiudad;
+
+
+
 
     @FXML
     private TableColumn<Sismo, String> tcCodigo;
@@ -68,7 +71,7 @@ public class SismosController {
 
     public void initialize() throws IOException {
 
-        Observatorio  observatorio = new Observatorio();
+        observatorio.getListaSismos().clear();
         observatorio.getListaSismos().addAll(Persistencia.cargarSismos());
         Persistencia.guardarRecursoBinario(observatorio);
         Persistencia.guardarRecursoSubastaXML(observatorio);
@@ -78,7 +81,7 @@ public class SismosController {
     @FXML
     void buscarSismos(ActionEvent event) throws IOException {
 
-        ArrayList<Sismo> listaEncontrados = new ArrayList<>(Persistencia.cargarSismo(txtBucarCiudad.getText()));
+        ArrayList<Sismo> listaEncontrados = new ArrayList<>(Persistencia.cargarSismoBuscado(txtBucarCiudad.getText()));
         tvSismos.setItems(FXCollections.observableArrayList(listaEncontrados));
         tvSismos.refresh();
 
@@ -88,7 +91,13 @@ public class SismosController {
     void registrarSismo(ActionEvent event) throws IOException {
 
         Persistencia.guardarSismos(crearSismo());
-        limpiarDatos();
+
+        //limpiarDatos();
+
+        observatorio.getListaSismos().clear();
+        observatorio.getListaSismos().addAll(Persistencia.cargarSismos());
+        Persistencia.guardarRecursoBinario(observatorio);
+        Persistencia.guardarRecursoSubastaXML(observatorio);
 
     }
 

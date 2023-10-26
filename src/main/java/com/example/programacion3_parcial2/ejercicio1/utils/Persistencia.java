@@ -10,9 +10,9 @@ public class Persistencia {
 
     private static final String RUTA_ARCHIVO_MOVIMIENTOS = "src/main/resources/movimientos.txt";
 
-    private static final String RUTA_ARCHIVO_MODELO_SUBASTA_XML = "src/main/resources/datos.xml";
+    private static final String RUTA_ARCHIVO_MODELO_XML = "src/main/resources/datos.xml";
 
-    private static final String RUTA_ARCHIVO_MODELO_SUBASTA_BINARIO = "src/main/resources/datos.dat";
+    private static final String RUTA_ARCHIVO_MODELO_BINARIO = "src/main/resources/datos.dat";
 
     private static final String RUTA_ARCHIVO_LOG = "EjercicioUno/src/main/resources/persistencia/log/registroLog.txt";
 
@@ -32,7 +32,7 @@ public class Persistencia {
         ArchivoUtil.guardarArchivo(RUTA_ARCHIVO_MOVIMIENTOS, contenido, true);
     }
 
-    public static ArrayList<Sismo> cargarSismo(String ciudad) throws FileNotFoundException, IOException {
+    public static ArrayList<Sismo> cargarSismoBuscado(String ciudad) throws FileNotFoundException, IOException {
 
         ArrayList<Sismo> listaSismos = new ArrayList<>();
 
@@ -93,7 +93,7 @@ public class Persistencia {
     public static void guardarRecursoSubastaXML(Observatorio observatorio) {
 
         try {
-            ArchivoUtil.salvarRecursoSerializadoXML(RUTA_ARCHIVO_MODELO_SUBASTA_XML, observatorio);
+            ArchivoUtil.salvarRecursoSerializadoXML(RUTA_ARCHIVO_MODELO_XML, observatorio);
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -102,7 +102,7 @@ public class Persistencia {
 
     public static void guardarRecursoBinario(Observatorio observatorio) {
         try {
-            ArchivoUtil.salvarRecursoSerializado(RUTA_ARCHIVO_MODELO_SUBASTA_BINARIO, observatorio);
+            ArchivoUtil.salvarRecursoSerializado(RUTA_ARCHIVO_MODELO_BINARIO, observatorio);
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
