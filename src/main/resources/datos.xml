@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="17.0.8.1" class="java.beans.XMLDecoder">
+ <object class="com.example.programacion3_parcial2.ejercicio1.model.Observatorio" id="Observatorio0">
+  <void property="listaSismos">
+   <void method="add">
+    <object class="com.example.programacion3_parcial2.ejercicio1.model.Sismo">
+     <void property="ciudad">
+      <string>Armenia</string>
+     </void>
+     <void property="codigo">
+      <string>1</string>
+     </void>
+     <void property="departamento">
+      <string>nada</string>
+     </void>
+     <void property="horaFinal">
+      <string>0</string>
+     </void>
+     <void property="horaInicio">
+      <string>0</string>
+     </void>
+     <void property="magnitud">
+      <float>0.0</float>
+     </void>
+     <void property="profundidad">
+      <float>0.0</float>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.example.programacion3_parcial2.ejercicio1.model.Sismo">
+     <void property="ciudad">
+      <string>Armenia</string>
+     </void>
+     <void property="codigo">
+      <string>2</string>
+     </void>
+     <void property="departamento">
+      <string>nada</string>
+     </void>
+     <void property="horaFinal">
+      <string>0</string>
+     </void>
+     <void property="horaInicio">
+      <string>0</string>
+     </void>
+     <void property="magnitud">
+      <float>0.0</float>
+     </void>
+     <void property="profundidad">
+      <float>0.0</float>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.example.programacion3_parcial2.ejercicio1.model.Sismo">
+     <void property="ciudad">
+      <string>Armenia</string>
+     </void>
+     <void property="codigo">
+      <string>3</string>
+     </void>
+     <void property="departamento">
+      <string>nada</string>
+     </void>
+     <void property="horaFinal">
+      <string>0</string>
+     </void>
+     <void property="horaInicio">
+      <string>0</string>
+     </void>
+     <void property="magnitud">
+      <float>0.0</float>
+     </void>
+     <void property="profundidad">
+      <float>0.0</float>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.example.programacion3_parcial2.ejercicio1.model.Sismo">
+     <void property="ciudad">
+      <string>Tebaida</string>
+     </void>
+     <void property="codigo">
+      <string>4</string>
+     </void>
+     <void property="departamento">
+      <string>nada</string>
+     </void>
+     <void property="horaFinal">
+      <string>0</string>
+     </void>
+     <void property="horaInicio">
+      <string>0</string>
+     </void>
+     <void property="magnitud">
+      <float>0.0</float>
+     </void>
+     <void property="profundidad">
+      <float>0.0</float>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>
